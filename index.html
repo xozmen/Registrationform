@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Form</title>
+	  <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="context">
+        <h1>Registračni Formulař</h1>
+        <p>Prosím o vyplněni</p>
+        <form action='https://register-demo.freecodecamp.org'>
+          <fieldset>
+            <label>Vaše Jmeno: <input /></label>
+            <label>Vaše Přijmeni: <input /></label>
+            <label>Váš Email: <input /></label>
+            <label>Vytvořte Heslo: <input /></label>
+          </fieldset>
+          <fieldset>
+            <label><input class="inline" type="radio" name="account-type" /> Personali učet</label>
+            <label><input class="inline" type="radio" name="account-type" /> Business učet</label>
+            <input type="checkbox" name="terms" class="inline" required /> Souhlasím s <a class="link" href="https://www.freecodecamp.org/news/terms-of-service/">pravidly a podmínkami</a>
+            </label>
+          </fieldset>
+          <fieldset>
+            <label > <input type="file" value="submit"> Nahrajte profilovou fotku:</label>
+    
+            <label>Zadejte svuj věk: <input type="number" min="13" max="120" />
+            </label>
+            <label>Jak jste si o nas dozvěděli 
+              <select>
+                <option value="0">Vyberte jedno</option>
+                <option value="1">Xozmen</option>
+                <option value="2">Kamaradi</option>
+                <option value="3">Reklama</option>
+                <option value="4">Jine</option>
+              </select>
+            </label>
+            <label class="bio">Zadejte bio: <textarea placeholder="Stručný popis" rows="3" cols="30"></textarea></label>
+          </fieldset>
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+
+   
+  </body>
+</html>
